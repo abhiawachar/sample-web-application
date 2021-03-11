@@ -29,7 +29,7 @@ pipeline{
                   steps{
                       withSonarQubeEnv(credentialsId: 'sonarqubeserver') 
 			  {
-				    sh 'mvn clean install'
+				    sh "mvn sonar:sonar"
 			  }
                	 	}  
                }	
