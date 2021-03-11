@@ -27,7 +27,7 @@ pipeline{
         	stage('Quality Gate Status Check')
 		{
                   steps{
-                      withSonarQubeEnv(credentialsId: 'sonarqubetoken') 
+                      withSonarQubeEnv(credentialsId: 'sonarqubeserver') 
 			  {
 				    sh 'mvn clean install'
 			  }
