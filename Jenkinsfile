@@ -32,8 +32,7 @@ pipeline{
 			      sh "mvn sonar:sonar"
                        	     	}
 			     sh "mvn clean install"
-                 	}
-               }	
-		
+                 	    }
+               	       }			
            }	       	     	         
 }
